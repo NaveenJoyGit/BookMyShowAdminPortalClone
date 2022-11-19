@@ -1,0 +1,19 @@
+.header-container {
+    position: relative;
+}
+
+.logo {
+    padding-left: 2em;
+    padding-top: 0.2em;
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url('../../../assets/logo.png');
+        background-repeat: no-repeat;
+        background-size:contain;
+        top: 0px;
+        left: -1em;
+        height: 3em;
+        width: 3em;
+    }
+}

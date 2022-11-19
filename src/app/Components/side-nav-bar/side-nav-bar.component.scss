@@ -1,0 +1,45 @@
+@import "../../themes.scss";
+
+.side-nav-container {
+    background-color: $nav-bg-color;
+    height: 100vh;
+    // width: 20%;x
+
+}
+
+.nav-headers {
+    padding: 0 1em 0em 2em;
+    background: none;
+    border: none;
+    color: white;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 1.5em;
+        top: 1em;
+        background-color: $accent-color;
+        left: 0em;
+        margin-top: -1em;
+        width: 0.5em;
+    }
+
+    &::after {
+        content: ">";
+        padding-left: 1.5em;
+    }
+}
+.nav-header-container {
+    position: relative;
+    &:hover {
+        background-color: $hover-color;
+        cursor: pointer;
+    }
+}
+.nav-content-container {
+    padding-top: 5em;
+}
+
+a {
+    text-decoration: none;
+}

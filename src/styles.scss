@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+@import "app/themes.scss";
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+body {
+    color: white !important;
+    background-color: $accent-color;
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    padding: 0px;
+    margin: 0px;
+}
+
+table {
+    color: white !important;
+}
+
+.app-button {
+    background-color: $nav-bg-color !important;
+    color: white;
+    &:hover {
+        background-color: $hover-color !important;
+    }
+}
