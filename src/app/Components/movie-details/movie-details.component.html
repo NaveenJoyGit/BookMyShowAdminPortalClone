@@ -1,0 +1,32 @@
+<div class="location-container pb-3">
+    <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover">
+        <thead>
+            <tr>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let location of locations;let indexOfelement=index;">
+                <td (click)="locationSelect(location)"><button class="app-button">{{ location }}</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="movie-details-container pt-3">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Theater</th>
+                <th>Timings</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let moviedetails of movieDetails">
+                <td>{{ moviedetails.theaterName }}</td>
+                <td>{{ moviedetails.timings }}</td>
+                <td>{{ moviedetails.price | currency: 'INR' }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

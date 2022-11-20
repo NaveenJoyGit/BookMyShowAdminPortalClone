@@ -1,0 +1,34 @@
+<div class="mt-5 add-trade-form-container">
+    <form [formGroup]="addMovieForm" (ngSubmit)="onFormSubmit()" class="form-container p-3">
+        <div *ngIf="showError" class="alert alert-danger" role="alert">
+            {{errorMessage}}
+        </div>
+        <div class="row form-rows">
+            <mat-form-field class="col full-width" appearance="outline">
+                <label>Movie Name</label>
+                <input matInput formControlName="movieName">
+            </mat-form-field>
+        </div>
+        <div class="row form-rows">
+            <mat-form-field class="col full-width" appearance="outline">
+                <label>Cast</label>
+                <input matInput formControlName="cast">
+            </mat-form-field>
+        
+            <mat-form-field class="col full-width" appearance="outline">
+                <label>Language</label>
+                <input matInput formControlName="language">
+            </mat-form-field>
+            <mat-form-field class="col full-width" appearance="outline">
+                <label>Genre</label>
+                <input matInput formControlName="genre">
+            </mat-form-field>
+            <mat-form-field class="col full-width" appearance="outline">
+                <label>No Of Locations</label>
+                <input matInput formControlName="noOfLocations">
+            </mat-form-field>
+        </div>
+    
+        <button class="app-button" [disabled]="!this.addMovieForm.valid">Submit</button>
+    </form>
+</div>

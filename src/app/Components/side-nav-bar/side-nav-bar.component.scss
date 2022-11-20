@@ -27,6 +27,9 @@
     &::after {
         content: ">";
         padding-left: 1.5em;
+        position: absolute;
+        top: 0em;
+        left: 8em;
     }
 }
 .nav-header-container {

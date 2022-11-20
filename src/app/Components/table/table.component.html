@@ -1,22 +1,29 @@
 <div>
-    <table class="table">
+    <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover">
         <thead>
             <tr>
+                <th>Name</th>
                 <th>Cast</th>
                 <th>Language</th>
                 <th>Genre</th>
                 <th>No. Of Locations</th>
                 <th>View detailsx</th>
+                <th>Edit</th>
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let person of persons">
-                <td>{{ person.id }}</td>
-                <td>{{ person.firstName }}</td>
-                <td>{{ person.lastName }}</td>
-                <td>{{ person.lastName }}</td>
-                <td><button class="btn app-button" (click)="viewDetails(person.id)">Details</button></td>
+            <tr *ngFor="let movie of movieList">
+                <td>{{ movie.name }}</td>
+                <td>{{ movie.cast }}</td>
+                <td>{{ movie.language }}</td>
+                <td>{{ movie.genre }}</td>
+                <td>{{ movie.noOfLocationsForBooking }}</td>
+                <td><button class="btn app-button" (click)="viewDetails(movie.id)">Details</button></td>
+                <td><button class="btn app-button" (click)="editMovie(movie.id)">Edit Movie</button></td>
             </tr>
         </tbody>
     </table>
+</div>
+<div>
+    <button (click)="addMovie()" class="app-button">Add Movie</button>
 </div>
