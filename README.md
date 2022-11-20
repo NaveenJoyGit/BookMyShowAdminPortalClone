@@ -1,14 +1,22 @@
 # BookMyShowAdminPortal
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
+## Home Page
+
+![image](https://user-images.githubusercontent.com/79571862/202919753-5cd435cf-de21-4531-a547-a45fb1fbff93.png)
+
+## Details page
+
+![image](https://user-images.githubusercontent.com/79571862/202919867-cc56f7fe-2f50-4c03-a718-3d82dee37df6.png)
+
+## Add Movie Page
+
+![image](https://user-images.githubusercontent.com/79571862/202919934-aa508c43-839a-42a0-9564-514306a10254.png)
+
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
