@@ -13,10 +13,10 @@
 ![image](https://user-images.githubusercontent.com/79571862/202919934-aa508c43-839a-42a0-9564-514306a10254.png)
 
 
-#About
+# About
 The application is developed using Angular 14 for teh front end features and is supported by a backed server with an in memory database supported by H2 Database
  
-#Dependencies & Libraries Used
+# Dependencies & Libraries Used
 * Angular Material: For a materialistic UI design
 * Angular Datatable : For sorting, filtering features for the tables
 * Angular bootstrap : For easier development of grid system and styling
